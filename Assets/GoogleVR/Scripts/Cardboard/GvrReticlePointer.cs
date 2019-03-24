@@ -100,10 +100,13 @@ public class GvrReticlePointer : GvrBasePointer
 
     public override void OnPointerClickDown()
     {
+      
+
     }
 
     public override void OnPointerClickUp()
     {
+       
     }
 
     public override void GetPointerRadius(out float enterRadius, out float exitRadius)
@@ -255,4 +258,11 @@ public class GvrReticlePointer : GvrBasePointer
         mesh.Optimize();
 #endif  // !UNITY_5_5_OR_NEWER
     }
+
+
+    public void ChangeScene( string sceneName)
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
+    }
+
 }
