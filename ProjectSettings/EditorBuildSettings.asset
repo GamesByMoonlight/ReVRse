@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: e89cfbb6034c80b4881c964feebd2735
+  - enabled: 1
+    path: Assets/Scenes/Kauai.unity
+    guid: 0cbbc895882b6934f8de5cf8a43f4ae2
+  - enabled: 1
+    path: Assets/Scenes/Maui.unity
+    guid: ec8c9ea616eac974aa4aba3da039cd97
+  - enabled: 1
+    path: Assets/Scenes/Oahu.unity
+    guid: 5c58765c480311f448ef535d13fd82b1
   m_configObjects: {}
