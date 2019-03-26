@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class changeScene : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float delayTime = 1f;
+    public string sceneName;
 
-
-    public void ChangeScene(int sceneN)
-    {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneN);
-    }
     public void ChangeScene(string sceneN)
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneN);
+        sceneName = sceneN;
+        Invoke("DelayedAction", delayTime);
+      
     }
 
-
-
+    void DelayedAction()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
+    }
 
 }
