@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class changeScene : MonoBehaviour
 {
-    public float delayTime = 1f;
+    public float delayTime = 2f;
     public string sceneName;
 
     public void ChangeScene(string sceneN)
